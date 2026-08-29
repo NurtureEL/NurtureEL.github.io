@@ -1,26 +1,25 @@
-# Project Name
+# Nurture Early Learning — website
 
-A brief description of the project.
+The website for [Nurture Early Learning](https://nurture-earlylearning.com.au), a boutique
+early childhood care and education service in Biloela, Queensland.
 
-## Table of Contents
+## How it works
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- Plain static HTML ([index.html](index.html)) and hand-written CSS
+  ([styles/styles.css](styles/styles.css)) — no build step, no frameworks.
+- Fonts (Playfair Display, Quicksand) load from Google Fonts; everything else is local.
+- Photos live in [assets/images/](assets/images/) — see the README there for the expected
+  filenames.
 
-## Installation
+## Deployment
 
-Instructions for installing the project.
+Hosted on GitHub Pages with the custom domain `nurture-earlylearning.com.au`
+(DNS managed at GoDaddy, pointed at GitHub Pages).
 
-## Usage
+Every push to `main` runs [.github/workflows/static.yml](.github/workflows/static.yml):
 
-Instructions for using the project.
+1. **Checks** — HTML validation (`html-validate`) and internal link/image checking
+   (`lychee`). Pull requests run these checks without deploying.
+2. **Deploy** — publishes the repository to GitHub Pages, only if the checks pass.
 
-## Contributing
-
-Guidelines for contributing to the project.
-
-## License
-
-The license for the project.
+To publish a change: edit, commit, push to `main`. That's it.

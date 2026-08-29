@@ -1,44 +1,253 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Nurture Early Learning</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    </head>
-    <body class="bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Nurture Early Learning</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+<html lang="en-AU" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurture Early Learning | Biloela, QLD</title>
+    <meta name="description" content="Nurture Early Learning is a boutique early childhood care and education service in Biloela, Queensland, offering play-based learning for children aged 3 to 5.">
+    <link rel="icon" href="assets/images/logo-round.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <!-- Top navigation -->
+    <header class="site-nav">
+        <div class="container nav-inner">
+            <a class="wordmark" href="#top" aria-label="Nurture Early Learning — home">
+                <span class="wordmark-nurture">nurture</span>
+                <span class="wordmark-sub">Early Learning</span>
+            </a>
+            <nav aria-label="Main">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#program">Our Program</a></li>
+                    <li><a href="#fees">Fees &amp; Enrolment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="nav-cta-mobile"><a class="button button-primary" href="#contact">Enquire</a></li>
+                </ul>
+            </nav>
+            <a class="button button-primary nav-cta" href="#contact">Enquire</a>
+            <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                <svg class="icon-menu" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                <svg class="icon-close" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#main">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#form">Enquire</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.facebook.com/yourPage" target="_blank">
-                            <i class="fab fa-facebook-f"></i> Facebook
-                        </a>
-                    </li>
-                </ul>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-media" aria-hidden="true">
+                <img src="assets/images/outdoor-play-area.jpg" alt="">
             </div>
-        </nav>
-        <div class="container">
-            <header class="my-4" id="header">
-                <h1 class="text-primary">About</h1>
-            </header>
-            <main id="main">
-                <p class="text-secondary">We are a kindergarten business that provides quality education and care for children aged 2-5 years old. Our programs are designed to help children develop their cognitive, social, emotional, and physical skills in a safe and nurturing environment.</p>
-            </main>
-            <div id="form">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf41GgWOL_So4ILTPTfI0IoLVaXE1k7hwIZy5NjkM5hHBe15g/viewform?embedded=true" width="640" height="801" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="container hero-content">
+                <h1>A place to grow, play and&nbsp;belong</h1>
+                <p class="lead">Nurture Early Learning is a boutique early childhood care and education service in Biloela, Queensland, where children learn through play in a calm, natural environment.</p>
+                <a class="button button-primary button-lg" href="#contact">Enquire now</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container split">
+                <div class="split-text">
+                    <h2>Meet Bronwyn</h2>
+                    <p>Nurture Early Learning is owned and directed by Bronwyn Piahana, a qualified early childhood teacher with more than 30 years' experience across kindergarten, long day care and family day care.</p>
+                    <p>Bronwyn has lived and worked in Biloela for over a decade as an early childhood teacher, director and educator, and is passionate about children learning through play.</p>
+                    <p>Our small setting — with places for up to 24 children — allows for genuine, personal attention, so every child is seen, heard and nurtured at their own pace.</p>
+                </div>
+                <figure class="split-media">
+                    <img src="assets/images/bronwyn.jpg" alt="Bronwyn Piahana, owner and director of Nurture Early Learning">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Program -->
+        <section class="section section-tinted" id="program">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Our Program</h2>
+                    <p>Learning through play, every day — indoors and out.</p>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <img src="assets/images/play-dough.jpg" alt="A child's playdough creation, patterned with stamps and textures">
+                        <div class="card-body">
+                            <h3>Play-based learning</h3>
+                            <p>Children follow their curiosity through open-ended, guided play that builds language, creativity and confidence.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="assets/images/play-tree.jpg" alt="A smiling child climbing among the leaves of a tree">
+                        <div class="card-body">
+                            <h3>Outdoor play</h3>
+                            <p>Our outdoor spaces invite climbing, digging, balancing and exploring — fresh air and big play, every day.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="assets/images/play-mantis.jpg" alt="A praying mantis perched gently on a child's hair">
+                        <div class="card-body">
+                            <h3>Connecting with nature</h3>
+                            <p>From garden visitors to growing things, children build wonder, care and respect for the natural world around them.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="assets/images/play-blocks.jpg" alt="Smooth wooden blocks stacked and balanced on an outdoor mat">
+                        <div class="card-body">
+                            <h3>School readiness</h3>
+                            <p>Through purposeful play with natural materials, children develop the thinking, social and self-help skills that set them up for school.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fees & Enrolment -->
+        <section class="section" id="fees">
+            <div class="container">
+                <div class="panel">
+                    <h2 class="panel-title">Fees &amp; Enrolment</h2>
+                    <div class="panel-columns">
+                        <div>
+                            <h3>The details</h3>
+                            <ul class="detail-list">
+                                <li>
+                                    <svg class="detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+                                    <span>Open <strong>8:00am – 4:00pm, Monday to Thursday</strong></span>
+                                </li>
+                                <li>
+                                    <svg class="detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg>
+                                    <span>Open <strong>50 weeks a year</strong>, closing for two weeks at Christmas</span>
+                                </li>
+                                <li>
+                                    <svg class="detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 13.6c3 .4 5.5 3 5.5 6.4"/></svg>
+                                    <span>Places for up to <strong>24 children aged 3 to 5</strong></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Fees</h3>
+                            <ul class="detail-list">
+                                <li>
+                                    <svg class="detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="2.5" x2="12" y2="21.5"/><path d="M16.5 6.5c-.8-1.3-2.4-2-4.5-2-2.6 0-4.5 1.3-4.5 3.4 0 4.6 9 2.5 9 7.1 0 2.1-1.9 3.5-4.5 3.5-2.2 0-3.9-.8-4.7-2.2"/></svg>
+                                    <span>Daily fee of <strong>$110</strong></span>
+                                </li>
+                                <li>
+                                    <svg class="detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="14 3 14 9 20 9"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="17.5" x2="13" y2="17.5"/></svg>
+                                    <span>Non-refundable enrolment fee of <strong>$50</strong> once you accept a place</span>
+                                </li>
+                                <li>
+                                    <svg class="detail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21C12 21 4.5 15.5 4.5 9.8 4.5 6.3 7.7 3.5 12 3.5s7.5 2.8 7.5 6.3C19.5 15.5 12 21 12 21z"/></svg>
+                                    <span>Full fees apply until your <strong>Child Care Subsidy (CCS)</strong> is approved — your account is credited where applicable</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-steps">
+                        <h3>How to enrol</h3>
+                        <ol class="steps">
+                            <li>Get in touch to register your interest and your preferred days.</li>
+                            <li>Come and visit us for a personal tour.</li>
+                            <li>Complete your enrolment and accept your place.</li>
+                            <li>Welcome to the Nurture family!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section section-tinted" id="contact">
+            <div class="container split">
+                <div class="split-text">
+                    <h2>Get in touch</h2>
+                    <p>We'd love to hear from you — reach out to ask a question, arrange a visit or enquire about a place for your child.</p>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3.5 6.5 12 13 20.5 6.5"/></svg>
+                            </span>
+                            <a href="mailto:admin@nurture-earlylearning.com.au">admin@nurture-earlylearning.com.au</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C12 21 5 14.8 5 9.9 5 6.1 8.1 3 12 3s7 3.1 7 6.9C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.9" r="2.5"/></svg>
+                            </span>
+                            <span>95 Kariboe Street, Biloela QLD 4715</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                            </span>
+                            <a href="https://www.facebook.com/profile.php?id=61553596446925" target="_blank" rel="noopener">Follow us on Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cta-card" id="enquire">
+                    <h3>Register your interest</h3>
+                    <p>Tell us a little about your child and the days you're looking for, and we'll be in touch. Remember to include:</p>
+                    <ul class="cta-checklist">
+                        <li>Your child's name and date of birth</li>
+                        <li>Your preferred days each week</li>
+                        <li>Your contact details</li>
+                    </ul>
+                    <a class="button button-primary button-block" href="mailto:admin@nurture-earlylearning.com.au?subject=Expression%20of%20interest%20%E2%80%93%20Nurture%20Early%20Learning">Email your expression of interest</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="wordmark wordmark-footer" href="#top">
+                    <span class="wordmark-nurture">nurture</span>
+                    <span class="wordmark-sub">Early Learning</span>
+                </a>
+                <p>A boutique early childhood care and education service for Biloela and surrounding communities.</p>
+                <a class="footer-social" href="https://www.facebook.com/profile.php?id=61553596446925" target="_blank" rel="noopener" aria-label="Nurture Early Learning on Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                </a>
+            </div>
+            <nav class="footer-links" aria-label="Footer">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#program">Our Program</a></li>
+                    <li><a href="#fees">Fees &amp; Enrolment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer-contact">
+                <h4>Visit us</h4>
+                <p>95 Kariboe Street<br>Biloela QLD 4715</p>
+                <p><a href="mailto:admin@nurture-earlylearning.com.au">admin@nurture-earlylearning.com.au</a></p>
             </div>
         </div>
-    </body>
+        <div class="container footer-bottom">
+            <p>© 2026 Nurture Early Learning</p>
+        </div>
+    </footer>
+
+    <script>
+        var toggle = document.getElementById('menu-toggle');
+        var nav = document.getElementById('nav-links');
+        toggle.addEventListener('click', function () {
+            var open = nav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        nav.addEventListener('click', function (e) {
+            if (e.target.tagName === 'A') {
+                nav.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
 </html>
