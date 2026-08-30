@@ -205,6 +205,13 @@ a {
     color: var(--primary);
 }
 
+.nav-links a.active {
+    color: var(--primary);
+    font-weight: 700;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 2px;
+}
+
 .nav-cta-mobile {
     display: none;
 }
@@ -276,6 +283,28 @@ a {
 }
 
 /* --------------------------------------------------------------------------
+   Subpage hero (compact title band used by every page except the home page)
+   -------------------------------------------------------------------------- */
+
+.page-hero {
+    background: var(--sage);
+    padding: 140px 0 56px;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: clamp(32px, 4vw, 44px);
+}
+
+.page-hero p {
+    color: var(--text-muted);
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 38em;
+    margin: 12px auto 0;
+}
+
+/* --------------------------------------------------------------------------
    Sections
    -------------------------------------------------------------------------- */
 
@@ -296,6 +325,27 @@ a {
 
 .section-heading p {
     color: var(--text-muted);
+}
+
+/* Long-form text column for content pages */
+
+.prose {
+    max-width: 70ch;
+    margin: 0 auto;
+}
+
+.prose h2 {
+    margin-top: 48px;
+}
+
+.prose h2:first-child {
+    margin-top: 0;
+}
+
+.text-link {
+    font-weight: 700;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
 }
 
 /* Two-column split (about, contact) */
@@ -615,6 +665,10 @@ a {
     .nav-links a:not(.button) {
         display: block;
         padding: 12px var(--gutter);
+    }
+
+    .nav-links a.active {
+        border-bottom: none;
     }
 
     .nav-cta-mobile {

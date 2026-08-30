@@ -36,11 +36,11 @@ jobs:
         with:
           node-version: 20
       - name: Validate HTML
-        run: npx --yes html-validate@8 "*.html"
+        run: npx --yes html-validate@8 "**/*.html"
       - name: Check internal links and images
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --offline --include-fragments --no-progress index.html
+          args: --offline --include-fragments --no-progress --root-dir ${{ github.workspace }} -- './**/*.html'
           fail: true
 
   deploy:
