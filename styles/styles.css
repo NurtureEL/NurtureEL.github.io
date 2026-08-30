@@ -453,40 +453,6 @@ a {
     margin-top: 3px;
 }
 
-.panel-steps {
-    margin-top: 40px;
-    padding-top: 32px;
-    border-top: 1px solid rgba(38, 65, 44, 0.15);
-}
-
-.steps {
-    list-style: none;
-    counter-reset: step;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-}
-
-.steps li {
-    counter-increment: step;
-    color: var(--text-muted);
-}
-
-.steps li::before {
-    content: counter(step);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    margin-bottom: 12px;
-    border-radius: 999px;
-    background: var(--primary-container);
-    color: #ffffff;
-    font-family: var(--font-display);
-    font-weight: 700;
-}
-
 /* --------------------------------------------------------------------------
    Contact
    -------------------------------------------------------------------------- */
@@ -528,13 +494,8 @@ a {
     color: var(--text-muted);
 }
 
-.cta-checklist {
-    margin: 0 0 28px 20px;
-    color: var(--text-muted);
-}
-
-.cta-checklist li {
-    margin-bottom: 8px;
+.cta-card .button {
+    margin-top: 12px;
 }
 
 /* --------------------------------------------------------------------------
@@ -618,10 +579,6 @@ a {
 
 @media (max-width: 900px) {
     .card-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .steps {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -708,11 +665,6 @@ a {
     .panel-columns {
         grid-template-columns: 1fr;
         gap: 32px;
-    }
-
-    .steps {
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
 
     .footer-grid {
